@@ -23,6 +23,9 @@
                         <td>{{ $project->description }}</td>
                         <td>{{ $project->link }}</td>
                         <td>{{ $project->slug }}</td>
+                        <td>
+                            <a href="{{ route('admin.projects.show', $project) }}">Show</a>
+                        </td>
                     </tr>
                 @empty
                     <td colspan="6">No projects yet.</td>
