@@ -4,6 +4,8 @@
 @section('content')
     <div class="container my-5">
 
+        <a href="{{ route('admin.projects.create') }}" class="btn btn-outline-primary mb-3">Add project</a>
+
         <table class="table">
             <thead>
                 <tr>
