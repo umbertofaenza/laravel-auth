@@ -5,6 +5,8 @@
     <div class="container my-5">
         <a href="{{ route('admin.projects.index') }}" class="btn btn-outline-primary mb-3">Back to list</a>
 
+        <a href="{{ route('admin.projects.edit', $project) }}" class="btn btn-outline-warning mb-3">Edit project</a>
+
         <h1 class="mb-5">{{ $project->name }}</h1>
 
         <div class="row g-5">

@@ -27,6 +27,7 @@
                         <td>{{ $project->slug }}</td>
                         <td>
                             <a href="{{ route('admin.projects.show', $project) }}">Show</a>
+                            <a href="{{ route('admin.projects.edit', $project) }}">Edit</a>
                         </td>
                     </tr>
                 @empty
