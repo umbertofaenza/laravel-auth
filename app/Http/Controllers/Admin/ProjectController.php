@@ -43,9 +43,7 @@ class ProjectController extends Controller
         $data = $request->all();
 
         $project = new Project();
-        $project->name = $data["name"];
-        $project->description = $data["description"];
-        $project->link = $data["link"];
+        $project->fill($data);
         $project->slug = Str::slug($project->name);
 
         $project->save();
