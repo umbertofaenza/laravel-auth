@@ -4,6 +4,18 @@
     <div class="container">
         <h1 class="my-3">Add project</h1>
 
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                Error(s):
+
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <form action="{{ route('admin.projects.store') }}" method="POST" class="row g-3 mb-3">
             @csrf
 
